@@ -62,11 +62,11 @@ public class CustomListTest {
         assertEquals(2, customList.countCities());
         customList.addCity(regina);
         assertEquals(3, customList.countCities());
-        customList.remove(edmonton);
+        customList.deleteCity(edmonton);
         assertEquals(2, customList.countCities());
-        customList.remove(regina);
+        customList.deleteCity(regina);
         assertEquals(1, customList.countCities());
-        customList.remove(toronto);
+        customList.deleteCity(toronto);
         assertEquals(0, customList.countCities());
     }
 
